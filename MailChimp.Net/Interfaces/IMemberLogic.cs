@@ -83,7 +83,7 @@ namespace MailChimp.Net.Interfaces
 		/// <param name="emailAddressOrHash">The email address or hash.</param>
 		/// <param name="request">The request.</param>
 		/// <returns></returns>
-		Task<IEnumerable<MemberTag>> GetTagsAsync(string listId, string emailAddressOrHash, BaseRequest request = null);
+		Task<IEnumerable<MemberTag>> GetTagsAsync(string listId, string emailAddressOrHash, QueryableBaseRequest request = null);
 
         /// <summary>
         /// Adds member tags asynchronous.

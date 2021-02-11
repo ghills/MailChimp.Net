@@ -529,7 +529,7 @@ namespace MailChimp.Net.Logic
             }
         }
 
-        public async Task<IEnumerable<MemberTag>> GetTagsAsync(string listId, string emailAddressOrHash, BaseRequest request = null)
+        public async Task<IEnumerable<MemberTag>> GetTagsAsync(string listId, string emailAddressOrHash, QueryableBaseRequest request = null)
         {
             using (var client = CreateMailClient($"{BaseUrl}/"))
             {
